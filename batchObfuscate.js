@@ -1,5 +1,4 @@
-class BatchObfuscate {
-    static obfuscate(code, prefix = "obfuscated", debugGuard = true) {
+function batchObfuscate(code, prefix = "obfuscated", debugGuard = true) {
         const randomSymbols = Array.from("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890").sort(() => Math.random() - 0.5);
         const secureCommand = ["dir %temp%", "ipconfig", "tree %windir%", "cls", "tree %appdata%"];
         const set = prefix + Math.random().toString(36).substring(10);
@@ -36,5 +35,5 @@ class BatchObfuscate {
 };
 
 if (typeof module == "object" && module.exports != undefined) {
-    module.exports = BatchObfuscate;
+    module.exports = batchObfuscate;
 }
