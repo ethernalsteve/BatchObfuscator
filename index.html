@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- By ethernalsteve (https://github.com/ethernalsteve/batchObfuscator) -->
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="./batchObfuscate.js"></script>
+    <title>batchObfuscator</title>
+    <style>
+        body {
+            background: #000;
+            height: 300px;
+            margin: 0;
+            padding: 0;
+            color: #ddf;
+            background-color: #112;
+            text-align: center;
+            padding-top: 12vh;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center; color: #ffffff;">batchObfuscator</h2>
+    <table align="center">
+        <tr>
+            <td>
+                <div class="form-group">
+                    <h2 style="text-align: center;">Input</h2>
+                    <textarea class="form-control" id="FormControlTextarea1" oninput="document.getElementById('FormControlTextarea2').value = batchObfuscate(document.getElementById('FormControlTextarea1').value)" cols="83" rows="15" style="resize: none;"></textarea>
+                </div>
+            </td>
+            <td>
+                <div class="form-group" style="margin-left: 10px;">
+                    <h2 style="text-align: center;">Output</h2>
+                    <textarea class="form-control" id="FormControlTextarea2" cols="83" rows="15" style="resize: none;"></textarea>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
