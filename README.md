@@ -8,12 +8,12 @@ To run **batchObfuscator** you must clone the repository with the `git clone htt
 
 ## Use it in your project
 ### Including
+For use you need to download the file batchObfuscate.js.
 #### Browser (Script tag)
 ```javascript
-<script src="https://github.com/ethernalsteve/batchObfuscator/raw/master/batchObfuscate.js"></script>
+<script src="./batchObfuscate.js"></script>
 ```
 #### Node.JS
-For use with a Node.JS, you need to download the file batchObfuscate.js.
 ##### ES6 module syntax:
 ```javascript
 import batchObfuscate from "./batchObfuscate.js";
