@@ -8,12 +8,12 @@
 
 ## Использование в своём проекте
 ### Подключение
+Для использования необходимо скачать файл batchObfuscate.js.
 #### Browser
 ```javascript
 <script src="https://github.com/ethernalsteve/batchObfuscator/raw/master/batchObfuscate.js"></script>
 ```
 #### Node.JS
-Для использования с Node.JS, необходимо скачать файл batchObfuscate.js.
 ##### Синтаксис ES6 module:
 ```javascript
 import batchObfuscate from "./batchObfuscate.js";
